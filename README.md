@@ -27,7 +27,7 @@ The following **stretch** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgflip.com/gif/au74f4' />
+<img src='https://imgur.com/a/LejFJK6' />
 
 GIF created with ScreentoGIF
 
