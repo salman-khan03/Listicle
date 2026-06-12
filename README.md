@@ -1,4 +1,4 @@
-# Local Beats 🎶
+# Listicle 🎶
 
 A Listicle web app for discovering local music events — concerts, open mic nights, and festivals happening near you. Built with a vanilla HTML/CSS/JS frontend served by an Express backend, styled with Picocss.
 
