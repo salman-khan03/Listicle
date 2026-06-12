@@ -27,10 +27,9 @@ The following **stretch** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgflip.com/gif/au74f4' width='' alt='Video Walkthrough' />
+<img src='https://imgflip.com/gif/au74f4' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...
+GIF created with ScreentoGIF
 
 ## Setup & How to Run
 
