@@ -27,6 +27,17 @@ export async function getAllEvents() {
   return rows;
 }
 
+// Search events by name, artists, genre, or venue (case-insensitive).
+export async function searchEvents(query) {
+  const { rows } = await pool.query(
+    `SELECT ${SELECT_COLUMNS} FROM events
+     WHERE name ILIKE $1 OR artists ILIKE $1 OR genre ILIKE $1 OR venue ILIKE $1
+     ORDER BY id`,
+    [`%${query}%`]
+  );
+  return rows;
+}
+
 // Get a single event by its slug for the detail page.
 // Returns undefined if no event matches.
 export async function getEventBySlug(slug) {
