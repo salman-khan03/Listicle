@@ -1,6 +1,8 @@
-# Listicle 🎶
+# LISTICLE ◆
 
-A Listicle web app for discovering local music events — concerts, open mic nights, and festivals happening near you. Built with a vanilla HTML/CSS/JS frontend served by an Express backend, styled with Picocss.
+An immersive Listicle web app for discovering local music events — concerts, open mic nights, and festivals happening near you. Built with a vanilla HTML/CSS/JS frontend served by an Express backend, with data from a Render PostgreSQL database.
+
+The UI is a dark, atmospheric experience: an animated aurora background with floating particles, a full-bleed hero with a frosted-glass panel, and image cards that tilt in 3D and reveal their details on hover.
 
 ## Required Features (Unit 2)
 
@@ -27,9 +29,11 @@ The following **stretch** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/LejFJK6' />
+<img src='./Listicle.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
 
-GIF created with ScreentoGIF
+<!-- GIF created with ScreenToGif -->
+
+> Note: re-record the walkthrough to capture the new immersive UI (animated hero, 3D hover-reveal cards, detail/booking pages) and replace `Listicle.gif`.
 
 ## Setup & How to Run
 
