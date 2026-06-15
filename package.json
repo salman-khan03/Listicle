@@ -1,7 +1,7 @@
 {
-  "name": "listicle-local-music",
-  "version": "1.0.0",
-  "description": "A Listicle web app for discovering local music events, built with Express.",
+  "name": "listicle",
+  "version": "2.0.0",
+  "description": "Listicle — an immersive web app for discovering local music events, served from a Render PostgreSQL database.",
   "main": "server.js",
   "type": "module",
   "scripts": {

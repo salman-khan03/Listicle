@@ -7,9 +7,10 @@ import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 
-import { getAllEvents, getEventBySlug } from "./db/events.js";
+import { getAllEvents, getEventBySlug, searchEvents } from "./db/events.js";
 import {
   homePage,
+  searchPage,
   eventPage,
   aboutPage,
   bookingPage,
@@ -37,6 +38,17 @@ app.get("/", async (req, res, next) => {
   try {
     const events = await getAllEvents();
     res.send(homePage(events));
+  } catch (err) {
+    next(err);
+  }
+});
+
+// Search — filter events by name, artist, genre, or venue.
+app.get("/search", async (req, res, next) => {
+  try {
+    const q = (req.query.q || "").trim();
+    const events = q ? await searchEvents(q) : await getAllEvents();
+    res.send(searchPage(events, q));
   } catch (err) {
     next(err);
   }
